@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="m-5 text-center">Spooky 1-100</h1>
+            </div>
+        </div>
+        <div class="row mb-5 text-center">
+            <div class="col"><h3>Numeros por clicar: </h3><h2 id="PorClicar">100</h2> </div>
+            <div class="col"><h3>Numeros clicados:</h3> <h2 id="Clicados">0</h2> </div>
+            <div class="col"><h3>Puntuación: </h3><h2 id="Puntuacion">0</h2> </div>
+            <div class="col"><h3>Contador: </h3><h2 id="timer">100</h2> </div>
+            <div class="col">
+                <button class="btn" id="trampa">Trampa</button>
+                <button class="btn" id="pausa">Pause</button>
+                  <p id="name">Nombre</p>
+                <p><input type="text" id="nombre"></p>
+            </div>
+        </div>
+        <table class="table" border="1" class="esconder">
+            <tbody id="TablaContenido" class="esconder">
+            </tbody>
+        </table>
+    </div>
+    <div id="myModal" class="modal">
+
+      <div class="modal-content">
+        <div class="modal-header">
+          <p>Bienvenido a mi menu de Pausa<p>
+        </div>
+        <div class="modal-body">
+          <p>Esta guapo verdad?</p>
+          <p>VERDAD!!?</p>
+        </div>
+        <div class="modal-footer">
+          <p>Me alegra que pienses eso, pulsa fuera para salir, y no, no te voy a hacer un boton ni una crucecita para salir NO VUELVAS!</p>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="code.js"></script>
